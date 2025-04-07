@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="ask.css">
+    </head>
+    
+    <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand logo-title" href="#">Mr. Ask</a>
+            
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Ask!</button>
+            </form>
+            <div class="d-flex gap-2 align-items-center">
+                <div>
+                    <div class="content">
+                        <div class="content__links">
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-success btn-sm">Sign Up</a>
+                                <a href="#" class="btn btn-outline-success btn-sm">Log In</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid mt-2">
+        <div class="row">
+            <section class="col">
+                <div class="d-flex align-items-center gap-2 mb-4">
+                    <h1 class="section-title">New Questions</h1>
+                </div>
+                <article class="d-flex gap-3 flex-column">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputTitle" class="col-form-label section-title">Title</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="Title" id="inputTitle6" class="form-control" placeholder="How to build a moon park?" 
+                            style="width: 300%;" maxlength="100" aria-describedby="TitleHelpInline">
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputText6" class="col-form-label section-title">Text</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="Text" id="inputText6" class="form-control" placeholder="Really, how? Have no idea about it" 
+                            style="width: 300%; height: 300px;" maxlenght="350" aria-describedby="TextHelpInline">
+                        </div>
+                    </div>  
+                    <div class="row g-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputTags6" class="col-form-label section-title">Tags</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="Tags" id="inputTags6" class="form-control" placeholder="moon, park, puzzle" 
+                            style="width: 300%;" maxlenght="150" aria-describedby="TagsHelpInline">
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 w-25">
+                        <button class="btn btn-outline-send" type="button">ASK!</button>
+                    </div>
+                </article>
+            </section>
+            
+
+            <aside class="col-3">
+                <section class="mb-3">
+                    <h3>Popular Tads</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge rounded-pill badge-gradient-1">Tag</span>
+                        <span class="badge rounded-pill badge-gradient-2">TagTagTag</span>
+                        <span class="badge rounded-pill badge-gradient-3">TagTag</span>
+                        <span class="badge rounded-pill badge-gradient-4">Tag</span>
+                        <span class="badge rounded-pill badge-gradient-5">TagTagTag</span>
+                        <span class="badge rounded-pill badge-gradient-6">TagTag</span>
+                    </div>
+                </section>
+                <section>
+                    <h3>Best members</h3>
+                    <div>
+                        <a class="d-block" href="#">Member</a>
+                        <a class="d-block" href="#">Member</a>
+                        <a class="d-block" href="#">Member</a>
+                        <a class="d-block" href="#">Member</a>
+                        <a class="d-block" href="#">Member</a>
+                        <a class="d-block" href="#">Member</a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+    
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
